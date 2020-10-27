@@ -17,7 +17,7 @@ function App() {
         if (newcity===null || newcity==="" ){return;}
         //setCity(newcity);
         const xhr = new XMLHttpRequest();
-        const url = 'https://api.openweathermap.org/data/2.5/weather?q='+newcity.trim()+'&lang=pl&units=metric&appid=46f8165671f5578bf966af701337e6e5';
+        const url = 'https://api.openweathermap.org/data/2.5/weather?q='+newcity.trim()+'&lang=pl&units=metric&appid=YOUR_API_KEY';
 
         xhr.open('GET', url);
         xhr.onreadystatechange = function (aEvt) 
